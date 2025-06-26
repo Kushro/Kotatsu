@@ -56,7 +56,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     # This condition ensures the job only runs for tag pushes, not on every push to 'devel'
-    # if: github.event_name == 'release'
+    if: github.event_name == 'release'
 
     steps:
       - name: Download APK from build job
