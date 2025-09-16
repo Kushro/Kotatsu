@@ -82,6 +82,7 @@ interface NetworkModule {
 			addInterceptor(GZipInterceptor())
 			addInterceptor(CloudFlareInterceptor())
 			addInterceptor(RateLimitInterceptor())
+			addInterceptor(ComickDomainInterceptor())
 			if (BuildConfig.DEBUG) {
 				addInterceptor(CurlLoggingInterceptor())
 			}
